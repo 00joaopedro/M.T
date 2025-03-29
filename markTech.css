@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+     }
+a{
+    text-decoration: none;
+    color: white;
+    gap: 0;
+}
+h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 25px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+button{
+    height: 30px;
+    width: 150px;
+    border-radius: 50px;
+}
+img{width: 300px;
+    height: 200px;
+}
+.p{
+    color: black;
+}
+.img{
+    max-width: 150px; /* Torna a imagem responsiva */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: 0 auto 10px; /* Centraliza a imagem e adiciona espaçamento inferior */
+}
+.title{
+    padding: 10px;
+    width: inherit;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: rgb(88, 9, 9);
+    color: white;
+}
+body {
+    background-color: rgb(6, 6, 63);
+    width: 100vw;
+    min-height: 100vh;
+}
+ul{
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    gap:10px;
+    margin-top: 75px;
+}
+li{
+    font-size: 15px;
+    cursor: pointer;
+    width: inherit;
+}
+   
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 30PX;
+    font-size: 40px;
+    color: white;
+}
+    .box{
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        padding: 7px;
+        background-color: white;
+    }
+    .box-container{
+        width: 96%;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        margin: 0 1% 0 1%;
+        gap: 2%;
+    }
+
+        /* fix/ajeitar essa parte do P */
+    .text{
+    font-size: 3em;
+    text-align: start;
+}
+@media (orientation: portrait) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+         }    
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+    }
+    p {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+    .geralp{
+        padding: 5em;
+        margin: 0 1% 1% 0;
+    }
+    ul{
+        margin-top: 75px;
+        gap: 10px;
+        justify-content: center;
+        width: inherit;
+    }
+    .box-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4%;
+        width: 98%;
+    }
+    .box{
+        align-items: center;
+        gap: 5%;
+        margin: 0 0 4%;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    h1, h2{
+        width: inherit;
+    }
+    h1{
+        font-size: 20px;
+        padding: 5px;
+    }
+    img{
+        height: auto;
+        width: 200px;
+    }
+    .vitrine{
+        width: inherit;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 0;
+    }
+    .item{
+        width: inherit;
+    }
+    .geralp{
+        width: auto;
+    }
+}
+
+.img-insta{
+    height: 8rem;
+    width: auto;
+    cursor: pointer;
+    margin: 2em 0 2em;
+}
+.img-insta:hover{
+transform: scale(1.1);
+}
+#container-insta{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: inherit;
+}
+.geralp{
+    justify-content: center;
+    display: flex;
+    margin:0 50px 20px 0;
+    color: white;
+    width: inherit;
+}
+        /* Container da vitrine */
+        .vitrine {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            width: inherit;
+            margin: 0 0 30px;
+            flex-direction: column;
+        }
+
+        /* Estilo de cada item da vitrine */
+        .item {
+            border-radius: 8px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        /* Imagem do item */
+
+        /* Título do item */
+
+        /* Descrição do item */
+        .item:hover{
+            transform: scale(1.1);
+        }
