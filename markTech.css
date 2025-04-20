@@ -4,6 +4,114 @@
     padding: 0;
     font-family: Arial, sans-serif;
      }
+     body {
+        font-family: Arial, sans-serif;
+        color: black;
+        background-size: cover;
+        background-attachment: fixed; /* Fixo ao rolar a página */
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        animation: entrar 2s ease-out forwards,;
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('imgs/back.jfif');
+        background-size: cover;
+        background-position: center;
+        opacity: 50%; /* Aqui você controla a opacidade */
+        z-index: -1; /* Fica atrás de tudo */
+        pointer-events: none; /* Garante que o fundo não interfira no clique */
+    }
+    li:hover{
+        transform: scale(1.2);
+    }
+       .item{
+            animation: pulse 2s infinite ease-in-out;
+        }
+        .item a{
+            color: black;
+        }
+        @keyframes entrar {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.imgg:hover{
+    transform: scale(1.1);
+}
+/* Animação de pulse */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+             /* Cabeçalho */
+             header {
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 20px 0;
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                /*z-index: 100; */
+            }
+            header .title{
+                color: white;
+            }
+            
+            nav .menu {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                list-style: none;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .menu li a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 12px;
+                transition: all 0.3s ease;
+            }
+            
+            .menu li a:hover {
+                background-color: gold;
+                color: black;
+                border-radius: 5px;
+            } 
+            .caixa1{
+                width: 30vw;
+                height: 55vh;
+                background-color: rgb(160, 160, 160);
+                padding: 20px 20px 20px 20px;
+                font-weight: bolder;
+                    opacity: 0;
+                    animation: 
+                      entrar 2s ease forwards,
+                      pulse 2s ease-in-out infinite;
+            }
+            .caixas1{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                padding-bottom: 50px;
+                
+            }    
 a{
     text-decoration: none;
     color: white;
@@ -36,70 +144,36 @@ img{width: 300px;
     display: block; /* Remove espaços extras abaixo da imagem */
     margin: 0 auto 10px; /* Centraliza a imagem e adiciona espaçamento inferior */
 }
-.title{
-    padding: 10px;
-    width: inherit;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    background-color: rgb(88, 9, 9);
-    color: white;
-}
-body {
-    background-color: rgb(6, 6, 63);
-    width: 100vw;
-    min-height: 100vh;
-}
-ul{
-    list-style: none;
-    justify-content: center;
-    display: flex;
-    font-weight: bold;
-    gap:10px;
-    margin-top: 75px;
-}
-li{
-    font-size: 15px;
-    cursor: pointer;
-    width: inherit;
-}
-   
-h1{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 30px;
-    color: white;
-}
-
 h2{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     margin-top: 30PX;
     font-size: 40px;
-    color: white;
+    color: black;
 }
     .box{
         justify-content: center;
         align-items: center;
         width: 70%;
-        padding: 7px;
-        background-color: white;
+        padding: 20px;
+        background-color: rgb(160, 160, 160);
+        color: black;
+        animation: entrar 2s ease-out forwards;
+        opacity: 0;
+        margin-bottom: 4%;
+        font-size: 1.15rem;
     }
     .box-container{
         width: 96%;
         flex-direction: row;
         display: flex;
         justify-content: center;
-        margin: 0 1% 0 1%;
+        margin: 0 1% 0% 1%;
         gap: 2%;
     }
-
         /* fix/ajeitar essa parte do P */
     .text{
-    font-size: 3em;
     text-align: start;
 }
 @media (orientation: portrait) {
@@ -168,7 +242,6 @@ h2{
         width: auto;
     }
 }
-
 .img-insta{
     height: 8rem;
     width: auto;
@@ -199,20 +272,15 @@ transform: scale(1.1);
             width: inherit;
             margin: 0 0 30px;
             flex-direction: column;
+            animation: entrar 2s ease-out forwards;
+            opacity: 0;
         }
-
         /* Estilo de cada item da vitrine */
         .item {
             border-radius: 8px;
             text-align: center;
             font-size: 30px;
         }
-
-        /* Imagem do item */
-
-        /* Título do item */
-
-        /* Descrição do item */
         .item:hover{
             transform: scale(1.1);
         }
