@@ -59,6 +59,9 @@
     transform: scale(1.05);
   }
 }
+    nav{
+    width: inherit;
+}
              /* Cabeçalho */
              header {
                 background-color: rgba(0, 0, 0, 0.7);
@@ -187,21 +190,11 @@ h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: inherit;
         min-height: 100vh;
     }
     p {
         font-size: clamp(1rem, 2vw, 1.5rem);
-    }
-    .geralp{
-        padding: 5em;
-        margin: 0 1% 1% 0;
-    }
-    ul{
-        margin-top: 75px;
-        gap: 10px;
-        justify-content: center;
-        width: inherit;
     }
     .box-container{
         flex-direction: column;
@@ -218,12 +211,13 @@ h2{
         justify-content: center;
         align-items: center;
     }
-    h1, h2{
-        width: inherit;
+    h2{
+    text-align: center
     }
     h1{
-        font-size: 20px;
+        font-size: 1rem;
         padding: 5px;
+        padding-left: 25px;
     }
     img{
         height: auto;
@@ -238,8 +232,25 @@ h2{
     .item{
         width: inherit;
     }
-    .geralp{
-        width: auto;
+    .caixas1{
+        width: inherit;
+        height: inherit;
+    }
+    .caixa1{
+        width: 80%;
+        height: 30vh;
+
+    }
+    .menu{
+        height: 4vh;
+        width: inherit;
+        padding-right: 25px;
+    }
+    li{
+        font-size: 0.85rem;
+    }
+    nav{
+        position: inherit;
     }
 }
 .img-insta{
@@ -255,13 +266,6 @@ transform: scale(1.1);
     justify-content: center;
     align-items: center;
     display: flex;
-    width: inherit;
-}
-.geralp{
-    justify-content: center;
-    display: flex;
-    margin:0 50px 20px 0;
-    color: white;
     width: inherit;
 }
         /* Container da vitrine */
