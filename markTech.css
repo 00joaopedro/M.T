@@ -191,7 +191,7 @@ h2{
         justify-content: center;
         align-items: center;
         width: inherit;
-        min-height: 100vh;
+        background-image: inherit;
     }
     p {
         font-size: clamp(1rem, 2vw, 1.5rem);
